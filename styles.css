@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+h2{
+    margin-top: 60px;
+}
+
+.wrapper{
+    text-align: center;
+    padding: 20px;
+    max-width: 700px;
+    width: 95%;
+    margin: 20px auto;
+    background-color: white;
+    border: 10px solid white;
+    height: 800px;
+
+}
+
+button{
+    width: 170px;
+    height: 100px;
+    /* background-color: rgb(184, 201, 201); */
+}
+
+
+
+
+#value {
+    font-size: 50px;
+}
+
+
+.colorUp {
+background-color:rgb(152, 224, 236);
+}
+
+
+ /* .message {
+     display: none;
+    position: absolute;
+    padding: 20px;
+    max-width: 450px;
+    width: 95%;
+    left:35%;
+    margin-top: 14em;
+    background-color: white;
+    border: 1px solid rgb(11, 29, 134);
+    height: 200px;
+    z-index: 1;
+    opacity: 0.9;
+}
+ 
+.message .textBox{
+    margin-top: 01em;
+    text-align: left;
+
+}
+
+ .yes{
+    background-color: #4e5353;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    width: 160px;
+    margin-top: 6em;
+    height: 40px;
+    float: right;
+    
+
+} */
+/* #dialogoverlay{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    max-width: 450px;
+    width: 95%;
+    left:35%;
+    margin-top: 14em;
+    background-color: white;
+    border: 1px solid rgb(11, 29, 134);
+    height: 200px;
+    z-index: 10;
+    opacity: 0.9;
+} */
+
+
+
+#dialogoverlay{
+   
+	display: none;
+    
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	/* background: #FFF; */
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+    border: 2px solid black;
+    margin-top: 13em;
+	display: none;
+	position: fixed;
+	background: white;
+	border-radius:7px; 
+	width:550px;
+	z-index: 1;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+ #dialogboxhead{ 
+     text-align: left;
+    font-size:19px; 
+    padding:10px; 
+}
+ #dialogboxbody{ 
+    text-align: left;
+    padding:20px; 
+     }
+ #dialogboxfoot{ 
+    
+    padding:10px; 
+    text-align:right; 
+}
+
+
+    /* #dialogClass{
+    position: relative;
+    left: 1em;
+    text-align: center;
+    height: 40px;
+    background-color: rgb(99, 116, 116);
+    padding:10px;  
+
+}
+
+
+#dialogClass{
+    position: relative;
+    left: 12em;
+    text-align: center;
+    height: 40px;
+    background-color: rgb(99, 116, 116);
+    padding:10px; 
+    
+
+} */
+
+

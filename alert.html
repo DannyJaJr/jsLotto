@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.alert {
+padding: 15px;
+background-color: red;
+color: black;
+margin-bottom: 15px;
+}
+.alert.success {background-color: green;}
+
+.closebutton {
+margin-left: 10px;
+color:black;
+font-weight: bold;
+float: right;
+line-height: 10px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h2>JavaScript Alert Messages</h2>
+<p>Click on given X symbol to close Alert Message.</p>
+<div class="alert success">
+<span class="closebutton">&times;</span>
+<strong>Success!</strong> Success used to show positive action
+</div>
+
+<script>
+var close = document.getElementsByClassName("closebutton");
+var i;
+for (i = 0; i < close.length; i++) {
+close[i].onclick = function(){
+var div = this.parentElement;
+div.style.opacity = "0";
+setTimeout(function(){ div.style.display = "none"; }, 400);
+}
+}
+</script>
+</body>
+</html>
