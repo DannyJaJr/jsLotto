@@ -1,4 +1,5 @@
-function animateValue(id, start, end, duration) {
+// function to change the button color and run the numbers
+function animation(id, start, end, duration) {
     if (start === end) return;
     let range = end - start;
     let current = start;
@@ -17,25 +18,20 @@ function animateValue(id, start, end, duration) {
 }
 
 
-
-
+// call th function with new value and set time to delay the div
 function myFunction() {
     start = Math.floor(Math.random() * 1000);
     end = Math.floor(Math.random() * 1000);
-    animateValue("value", start, end, 5000)
+    animation("value", start, end, 5000)
      setTimeout(goodbye, 6000)
+    //  Alert.render()
 }
 
 
 
 
 
-
-
-
-
-
-
+// function to create display the box
  function CustomAlert() {
     this.render = function (dialog) {
         var winW = window.innerWidth;
@@ -49,15 +45,17 @@ function myFunction() {
         dialogbox.style.display = "block";
         document.getElementById('dialogboxhead').innerHTML = "The site says...";
         document.getElementById('dialogboxbody').innerHTML = "Too bad! You lost!";
-        document.getElementById('dialogboxfoot').innerHTML = '<button id="dialogClass" onclick="Alert.ok()">OK</button>';
+        document.getElementById('dialogboxfoot').innerHTML = '<button id="okButton" onclick="Alert.ok()">OK</button>';
     }
     this.ok = function () {
         document.getElementById('dialogbox').style.display = "none";
         document.getElementById('dialogoverlay').style.display = "none";
     }
 }
+var Alert = new CustomAlert();
 
 
+// function to create render the box
 function goodbye (){
     var Alert = new CustomAlert();
     Alert.render()

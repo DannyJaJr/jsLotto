@@ -97,7 +97,7 @@ background-color:rgb(152, 224, 236);
 
 
 
-#dialogoverlay{
+/* #dialogoverlay{
    
 	display: none;
     
@@ -105,7 +105,6 @@ background-color:rgb(152, 224, 236);
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	/* background: #FFF; */
 	width: 100%;
 	z-index: 10;
 }
@@ -129,33 +128,70 @@ background-color:rgb(152, 224, 236);
     text-align: left;
     padding:20px; 
      }
+     #dialogbox > div > #dialogboxfoot{ 
+         background: #666; 
+         padding:10px; 
+         text-align:right; 
+        }
+ */
+
+
+
+
+
+ #dialogoverlay{
+    display: none;
+	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	
+	width: 100%;
+	z-index: 10;
+    
+    
+    
+}
+#dialogbox{
+    margin-top: 13em;
+    display: none;
+	position: fixed;
+	background-color: white;
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+    border: 3px solid black;
+
+
+
+}
+#dialogbox > div{ 
+   
+    margin:8px; 
+}
+
+#dialogboxhead{ 
+    text-align: left;
+    font-size:19px; 
+    padding:10px; 
+    
+}
+
+
+#dialogboxbody{ 
+    text-align: left;
+    padding:20px; 
+    
+}
+
+
  #dialogboxfoot{ 
     
     padding:10px; 
     text-align:right; 
 }
 
-
-    /* #dialogClass{
-    position: relative;
-    left: 1em;
-    text-align: center;
-    height: 40px;
-    background-color: rgb(99, 116, 116);
-    padding:10px;  
-
+#okButton{
+    height: 30px;
+    background-color: #666;
 }
-
-
-#dialogClass{
-    position: relative;
-    left: 12em;
-    text-align: center;
-    height: 40px;
-    background-color: rgb(99, 116, 116);
-    padding:10px; 
-    
-
-} */
-
-
